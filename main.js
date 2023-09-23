@@ -10,7 +10,7 @@ $(document).ready(function(){
         $('.navbar').removeClass('nav-toggle');
 
 
-        if($(window).scrollTop() > 30){
+        if($(window).scrollTop() > 33){
             $('.header').css({'background':'black', 'box-shadow':'0 .2rem .5rem rgba(0, 0, 0, .4)'});
         }
         else{
@@ -42,10 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // -------------------------------------------------------------------------------
 
-  const cursorElement = document.getElementById('cursor');
-        const cursorAnimationDuration = 4000; // Adjust the duration to match your typing animation
-
-        setTimeout(() => {
-            cursorElement.style.display = 'none';
-        }, cursorAnimationDuration);
+  
  

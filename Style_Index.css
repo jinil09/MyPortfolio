@@ -194,7 +194,7 @@ body{
 }
 
 .heading{
-    margin: 2rem;
+    margin: 3.5rem;
     padding-top: 6rem;
     display: inline-block;
     font-size: 4rem;
@@ -863,6 +863,9 @@ body{
 
       /* ----------------------- */
 
+    .Rimg{
+        display: none;
+      }
      
     
 }

@@ -572,7 +572,7 @@ body{
   color: #444;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .tech_use {
@@ -614,11 +614,6 @@ body{
 
 
 /* ////// */
-
-
-
-
-
 
 
 /* Footer------------- */
@@ -875,6 +870,11 @@ body{
     .Rimg{
         display: none;
       }
+    /* ---------------- */
+      a.rml{
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
      
     
 }
@@ -1032,4 +1032,25 @@ body{
 .fade11 {
   opacity: 1;
   transform: translateY(0);
+}
+/* --------------------------------------------------------------------------- */
+.mcfrml{
+  display: none;
+}
+
+.readlesshide{
+  display: none;
+}
+
+.rmlllmargin{
+  margin-bottom: 2rem;
+}
+
+.rml{
+  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #9d9b9b;
+  /* color: #101dde; */
+  cursor: pointer;
 }

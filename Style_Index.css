@@ -372,7 +372,7 @@ body{
   }
   
   .mystatus .row .card{
-    height:40rem;
+    height:auto;
     width:100rem;
     background:#fff;
     text-align: center;
@@ -380,7 +380,8 @@ body{
     position: relative;
     overflow: hidden;
     -webkit-box-reflect: below .2rem linear-gradient(transparent 100%, #0004);
-    padding: 0 4rem;
+/*     padding: 0 4rem; */
+      padding:2.5rem;
   }
   
   .mystatus .row .card .images{

@@ -406,8 +406,8 @@ body{
     font-size: 1.8rem;
     color:var(--color);
   }
-  
-  .mystatus .row .card .info .icons a{
+
+/* .mystatus .row .card .info .icons a{
     margin-top: 4rem;
     padding:0 1rem;
     font-size: 3rem;
@@ -416,6 +416,15 @@ body{
   
   .mystatus .row .card .info .icons a:hover{
     color:var(--color);
+  } */
+  
+  .icons11 a{
+    font-size: 3rem;
+    color:#333;
+  }
+  .icons11 a:hover{
+    color:#2ce29c;
+    cursor: pointer;
   }
   
   .mystatus .row .card::before, .mystatus .row .card::after{
@@ -875,6 +884,14 @@ body{
         font-size: 1.7rem;
         font-weight: 500;
       }
+    /* -------------------- */
+      .main-edu-container{
+        flex-direction: column;
+        /* gap: 2rem; */
+      }
+      .main-edu-container .edu-card{
+        margin: 2rem 0rem;
+      }
      
     
 }
@@ -1053,4 +1070,61 @@ body{
   color: #9d9b9b;
   /* color: #101dde; */
   cursor: pointer;
+}
+/* --------------------------------------------------- */
+.main-edu-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 5rem;
+  margin-top: 2rem; */
+}
+
+.edu-card{
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 2px;
+  border-style: dashed;
+  /* padding: 20px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 230px;
+  padding: 2rem;
+  margin: 4rem 3rem;
+}
+
+.edu-card:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transform: translateX(-5px);
+  transform: translateY(5px);
+}
+
+.head-edu{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #6a5acd;
+}
+
+.type-edu{
+  font-size: 11px;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+.institute-edu{
+  font-size: medium;
+  margin-top: 1rem;
+}
+
+.Score-edu{
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+}
+
+.sp-edu{
+  margin-top: 1.5rem;
+  color: #007BFF;
+  font-size: 1.3rem;
 }

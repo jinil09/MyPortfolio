@@ -106,4 +106,52 @@ const rl3= document.getElementById('Readless3')
    rl3.setAttribute("style","display:none")
    rm3.setAttribute("style","display:block")
   }
- 
+ // ---------------------------------------------------------------------------------
+
+function incrementVisitorCount() {
+  // Get the current visitor count from local storage
+  let count = localStorage.getItem("visitorCount");
+
+  // If the count doesn't exist in local storage, initialize it to 0
+  if (!count) {
+    count = 0;
+  } else {
+    // If it exists, parse it as an integer
+    count = parseInt(count);
+  }
+
+  // Increment the count by 1
+  count++;
+
+  // Update the visitor count in the HTML
+  document.getElementById("visitor-count").textContent = count;
+
+  // Update the visitor count in local storage
+  localStorage.setItem("visitorCount", count.toString());
+}
+
+// Call the function to increment the visitor count
+incrementVisitorCount();
+// ----------------------------------------------------------------
+ // Function to generate a random gradient color with an orange tint
+ function getRandomGradientColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    // Generate colors with values between FF and 90 for an orange tint
+    color += letters[Math.floor(Math.random() * 6) + 9];
+  }
+  return color;
+}
+
+// Function to set a random gradient color to the visitor count
+function setRandomColor() {
+  const visitorCount = document.getElementById('visitor-count');
+  const randomColor = getRandomGradientColor();
+  visitorCount.style.background = `-webkit-linear-gradient(45deg, ${randomColor}, #ed9726)`;
+  visitorCount.style.webkitBackgroundClip = 'text';
+  visitorCount.style.color = 'transparent';
+}
+
+// Call the function to set the initial random color
+setRandomColor();

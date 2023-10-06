@@ -108,30 +108,23 @@ const rl3= document.getElementById('Readless3')
   }
  // ---------------------------------------------------------------------------------
 
-function incrementVisitorCount() {
-  // Get the current visitor count from local storage
-  let count = localStorage.getItem("visitorCount");
+function updateVisitorCount() {
+  // Get the current count from Local Storage or initialize it to 0
+  let count = parseInt(localStorage.getItem('visitorCount')) || 0;
 
-  // If the count doesn't exist in local storage, initialize it to 0
-  if (!count) {
-    count = 0;
-  } else {
-    // If it exists, parse it as an integer
-    count = parseInt(count);
-  }
-
-  // Increment the count by 1
+  // Increment the count
   count++;
 
-  // Update the visitor count in the HTML
-  document.getElementById("visitor-count").textContent = count;
+  // Store the updated count in Local Storage
+  localStorage.setItem('visitorCount', count);
 
-  // Update the visitor count in local storage
-  localStorage.setItem("visitorCount", count.toString());
+  // Update the displayed count
+  const visitorCount = document.getElementById('visitor-count');
+  visitorCount.textContent = count;
 }
 
-// Call the function to increment the visitor count
-incrementVisitorCount();
+// Call the function to update the visitor count (you can call it when needed)
+updateVisitorCount();
 // ----------------------------------------------------------------
  // Function to generate a random gradient color with an orange tint
  function getRandomGradientColor() {

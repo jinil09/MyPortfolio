@@ -107,3 +107,18 @@ const rl3= document.getElementById('Readless3')
    rm3.setAttribute("style","display:block")
   }
  // ---------------------------------------------------------------------------------
+
+// Get the current visitor count from the GitHub repository's Issues
+fetch('https://api.github.com/repos/jinil09/MyPortfolio/issues?state=all')
+  .then(response => response.json())
+  .then(data => {
+    // Calculate the visitor count (total number of issues)
+    const visitorCount = data.length;
+
+    // Update the placeholder element with the visitor count
+    const visitorCountElement = document.getElementById('visitor-count');
+    visitorCountElement.textContent = visitorCount;
+  })
+  .catch(error => {
+    console.error('Error fetching data: ', error);
+  });

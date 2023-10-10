@@ -107,3 +107,42 @@ const rl3= document.getElementById('Readless3')
    rm3.setAttribute("style","display:block")
   }
  // ---------------------------------------------------------------------------------
+// Get the current date and time.
+var now = new Date();
+
+// Create a new localStorage object to store the visit count.
+var localStorage = window.localStorage;
+
+// Get the current visit count from localStorage.
+var visitCount = localStorage.getItem('visitCount');
+
+// If the visit count does not exist, set it to 1.
+if (visitCount === null) {
+  visitCount = 1;
+}
+
+// Increment the visit count.
+visitCount++;
+
+// Set the visit count in localStorage.
+localStorage.setItem('visitCount', visitCount);
+
+// Display the visit count in the footer.
+document.getElementById('footer-visit-count').innerHTML = visitCount;
+// ------------------------------------------------------------------------------------------
+
+// Get the total visitors count from localStorage.
+var visitCount = localStorage.getItem('visitCount');
+
+// If the visit count does not exist, set it to 1.
+if (visitCount === null) {
+  visitCount = 1;
+}
+
+// Set the total visitors count in the footer.
+document.getElementById('footer-visit-count').innerHTML = visitCount;
+// Generate a random font color.
+var fontColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+// Set the total visitors count font color to the random font color.
+document.getElementById('footer-visit-count').style.color = fontColor;

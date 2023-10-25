@@ -1133,8 +1133,8 @@ body{
 
 .footer {
   border-top: 7px solid yellow;
-  border-top-left-radius: 30px; /* Adjust the radius as per your design */
-  border-top-right-radius: 30px; /* Adjust the radius as per your design */
+  border-top-left-radius: 30px; 
+  border-top-right-radius: 30px;
   padding-top: 20px; 
 }
 /* ---------------------------------------------------------------- */

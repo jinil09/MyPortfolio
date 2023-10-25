@@ -1130,3 +1130,11 @@ body{
   font-size: 1.3rem;
 }
 /* -------------------------------------------------------------------- */
+
+.footer {
+  border-top: 7px solid yellow;
+  border-top-left-radius: 30px; /* Adjust the radius as per your design */
+  border-top-right-radius: 30px; /* Adjust the radius as per your design */
+  padding-top: 20px; 
+}
+/* ---------------------------------------------------------------- */

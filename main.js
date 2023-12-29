@@ -107,3 +107,19 @@ const rl3= document.getElementById('Readless3')
    rm3.setAttribute("style","display:block")
   }
  // ---------------------------------------------------------------------------------
+
+const snowfall = document.querySelector('.snowfall');
+
+for (let i = 0; i < 50; i++) {
+  const snowflake = document.createElement('i');
+  snowflake.classList.add('snowflake');
+  snowflake.innerHTML = '❅'; // Use any snowflake-like character or an image URL
+  snowflake.style.left = `${Math.random() * 100}vw`;
+  snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`;
+  snowflake.style.opacity = Math.random();
+  snowflake.style.fontSize = `${Math.random() * 15 + 10}px`;
+  snowflake.style.animationDelay = `${Math.random() * 5}s`;
+  snowfall.appendChild(snowflake);
+}
+
+//------------------------------------------------------------------------------------

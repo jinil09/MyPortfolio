@@ -1138,3 +1138,33 @@ body{
   padding-top: 20px; 
 }
 /* ---------------------------------------------------------------- */
+
+/* Snow Effect */
+.snowflake {
+  position: absolute;
+  color: #ffffff;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear infinite, glow 1s ease-in-out infinite alternate;
+  z-index: 2000;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)); 
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+  }
+}
+
+/*-------------------------------------------------------------------------------  */
